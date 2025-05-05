@@ -11,6 +11,15 @@ public class Player : MonoBehaviour
    // Update is called once per frame
    private void Update()
    {
+      HandleMovement();
+   }
+   public bool IsWalking()
+   {
+      return isWalking;
+   }
+
+   private void HandleMovement()
+   {
       Vector2 inputVector = gameInput.GetMovementVectorNormalized();
 
       // Since inputVector is a Vector2, we need to convert it to a 
@@ -66,10 +75,5 @@ public class Player : MonoBehaviour
       transform.forward = Vector3.Slerp(transform.forward, moveDir, rotateSpeed * Time.deltaTime);
 
       isWalking = (moveDir == Vector3.zero) ? false : true;
-
-   }
-   public bool IsWalking()
-   {
-      return isWalking;
    }
 }

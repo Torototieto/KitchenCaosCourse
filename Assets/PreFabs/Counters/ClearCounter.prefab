@@ -118,11 +118,11 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1443054320958101852, guid: c1c180fb27ea14d96a933338122e6cec, type: 3}
-      insertIndex: 0
-      addedObject: {fileID: 9081992699256936845}
-    - targetCorrespondingSourceObject: {fileID: 1443054320958101852, guid: c1c180fb27ea14d96a933338122e6cec, type: 3}
-      insertIndex: 1
+      insertIndex: -1
       addedObject: {fileID: 4749379822548545512}
+    - targetCorrespondingSourceObject: {fileID: 1443054320958101852, guid: c1c180fb27ea14d96a933338122e6cec, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9081992699256936845}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 715778767170479124, guid: c1c180fb27ea14d96a933338122e6cec, type: 3}
       insertIndex: -1
@@ -272,5 +272,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1de5a2ce669f8feac986b57d29663f7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clearCounter: {fileID: 6498456029041328139}
-  visualGameObject: {fileID: 835176695383836684}
+  baseCounter: {fileID: 6498456029041328139}
+  visualGameObjectArray:
+  - {fileID: 835176695383836684}

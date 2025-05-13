@@ -12,7 +12,7 @@ public class KitchenObject : MonoBehaviour
 
     public void SetKitchenObjectParent(IKitchenObjectParent kitchenObjectParent)
     {
-        if (this.kitchenObjectParent!= null)
+        if (this.kitchenObjectParent != null)
         {
             this.kitchenObjectParent.ClearKitchenObject();
         }
@@ -25,7 +25,7 @@ public class KitchenObject : MonoBehaviour
         }
 
         kitchenObjectParent.SetKitchenObject(this);
-        
+
         transform.parent = kitchenObjectParent.GetKitchenObjectFollowTransform();
         transform.localPosition = Vector3.zero;
     }

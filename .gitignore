@@ -74,4 +74,4 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 # CodeMonkey Free Asset
-/Assets/CodeMonkeyFree/Editor/ScriptableObjects/CodeMonkeyFreeSO.asset
+CodeMonkeyFreeSO.asset
